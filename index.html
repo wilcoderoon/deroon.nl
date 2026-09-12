@@ -1,268 +1,226 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Wilco de Roon</title>
+    <title>De Roon Methodieken</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+    <style>
+        :root{
+            --bg:#f5f3ee;
+            --primary:#1a2740;
+            --accent:#b77732;
+            --text:#444;
+            --white:#ffffff;
+        }
 
-body{
-    font-family: "Segoe UI", Arial, sans-serif;
-    background:#f8f9fb;
-    color:#222;
-    line-height:1.8;
-}
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
 
-.hero{
-    background:linear-gradient(135deg,#0f172a,#1e293b);
-    color:white;
-    text-align:center;
-    padding:80px 20px 120px;
-}
+        body{
+            font-family:"Segoe UI", Arial, sans-serif;
+            background:var(--bg);
+            color:var(--text);
+            line-height:1.7;
+        }
 
-.hero img{
-    width:220px;
-    height:220px;
-    object-fit:cover;
-    border-radius:50%;
-    border:6px solid rgba(255,255,255,0.15);
-    box-shadow:0 15px 40px rgba(0,0,0,0.35);
-    margin-bottom:30px;
-}
+        .hero{
+            text-align:center;
+            padding:60px 20px;
+        }
 
-.hero h1{
-    font-size:3rem;
-    font-weight:600;
-    margin-bottom:12px;
-}
+        .profile{
+            width:240px;
+            height:240px;
+            object-fit:cover;
+            border-radius:50%;
+            border:6px solid var(--accent);
+            box-shadow:0 10px 25px rgba(0,0,0,.15);
+        }
 
-.hero p{
-    max-width:700px;
-    margin:auto;
-    font-size:1.2rem;
-    color:#dbe4f0;
-}
+        .logo{
+            margin-top:30px;
+            color:var(--accent);
+            font-size:18px;
+            letter-spacing:6px;
+            font-weight:600;
+            text-transform:uppercase;
+        }
 
-.content{
-    max-width:1000px;
-    margin:-60px auto 80px;
-    padding:0 20px;
-}
+        h1{
+            font-size:64px;
+            color:var(--primary);
+            margin-top:25px;
+            margin-bottom:20px;
+        }
 
-.card{
-    background:white;
-    padding:50px;
-    border-radius:20px;
-    box-shadow:0 10px 40px rgba(0,0,0,0.08);
-}
+        .subtitle{
+            color:var(--accent);
+            font-size:26px;
+            font-weight:600;
+            margin-bottom:35px;
+        }
 
-.quote{
-    font-size:1.6rem;
-    color:#0f172a;
-    text-align:center;
-    margin-bottom:50px;
-    font-weight:300;
-}
+        .intro{
+            max-width:900px;
+            margin:0 auto;
+            font-size:28px;
+        }
 
-.section{
-    margin-bottom:40px;
-}
+        .content{
+            max-width:1100px;
+            margin:70px auto;
+            padding:0 20px;
+        }
 
-.section h2{
-    color:#0f172a;
-    margin-bottom:15px;
-    font-size:1.8rem;
-}
+        .card{
+            background:var(--white);
+            border-radius:25px;
+            padding:50px;
+            box-shadow:0 10px 30px rgba(0,0,0,.08);
+        }
 
-.section p{
-    color:#444;
-    margin-bottom:15px;
-}
+        .card h2{
+            text-align:center;
+            color:var(--primary);
+            font-size:42px;
+            margin-bottom:30px;
+        }
 
-.principles{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:25px;
-    margin-top:30px;
-}
+        .card p{
+            font-size:22px;
+            margin-bottom:25px;
+        }
 
-.principle{
-    background:#f4f7fb;
-    padding:25px;
-    border-radius:15px;
-}
+        .pillars{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:20px;
+            margin-top:35px;
+        }
 
-.principle h3{
-    margin-bottom:10px;
-    color:#0f172a;
-}
+        .pillar{
+            background:#fafafa;
+            border-top:4px solid var(--accent);
+            border-radius:15px;
+            padding:25px;
+            text-align:center;
+        }
 
-.footer{
-    text-align:center;
-    padding:40px;
-    color:#777;
-    border-top:1px solid #e5e7eb;
-    background:white;
-}
+        .pillar h3{
+            color:var(--primary);
+            margin-bottom:10px;
+        }
 
-@media(max-width:768px){
+        .footer{
+            text-align:center;
+            padding:50px 20px;
+            color:#888;
+        }
 
-.hero h1{
-    font-size:2.2rem;
-}
+        @media(max-width:768px){
 
-.hero img{
-    width:180px;
-    height:180px;
-}
+            h1{
+                font-size:42px;
+            }
 
-.card{
-    padding:30px;
-}
-}
-</style>
+            .subtitle{
+                font-size:20px;
+            }
+
+            .intro{
+                font-size:20px;
+            }
+
+            .profile{
+                width:180px;
+                height:180px;
+            }
+
+            .card{
+                padding:25px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<section class="hero">
+    <section class="hero">
 
-    wilcoderoon.png
+        <img src="wilcoderoon.png" alt="De Roon Methodieken" class="profile">
 
-    <h1>DE ROON METHODIEK</h1>
-
-    <p>
-        Bewust navigeren in een wereld die steeds sneller,
-        complexer en onvoorspelbaarder wordt.
-    </p>
-
-</section>
-
-<div class="content">
-
-    <div class="card">
-
-        <div class="quote">
-            "Niet alles vraagt om meer kennis.
-            Soms vraagt het om meer bewustzijn."
+        <div class="logo">
+            DE ROON METHODIEKEN
         </div>
 
-        <div class="section">
+        <h1>DE ROON METHODIEK</h1>
 
-            <h2>Waarom</h2>
-
-            <p>
-                De wereld verandert in een tempo dat we nog niet eerder
-                hebben meegemaakt. We worden dagelijks geconfronteerd met
-                meer informatie, meer keuzes, meer verwachtingen en meer
-                afleiding dan ooit tevoren.
-            </p>
-
-            <p>
-                Daardoor raken veel mensen en organisaties het overzicht kwijt.
-                Niet omdat er te weinig kennis beschikbaar is, maar omdat het
-                moeilijker wordt om richting te vinden tussen alle mogelijkheden.
-            </p>
-
+        <div class="subtitle">
+            Bewustwording • Oriëntatie • Focus • Actie
         </div>
 
-        <div class="section">
+        <p class="intro">
+            Bewust navigeren in een wereld die steeds sneller,
+            complexer en onvoorspelbaarder wordt.
+        </p>
 
-            <h2>Een kompas voor bewust leven en werken</h2>
+    </section>
+
+    <section class="content">
+
+        <div class="card">
+
+            <h2>Onze aanpak</h2>
 
             <p>
-                Duurzame ontwikkeling begint niet bij systemen, processen of
-                technologie. Zij begint bij mensen.
+                De Roon Methodieken ontwikkelt praktische denkwijzen,
+                modellen en methodieken die mensen en organisaties
+                helpen om bewust richting te geven aan groei,
+                ontwikkeling en resultaat.
             </p>
 
             <p>
-                Bij het vermogen om bewust waar te nemen wat er gebeurt,
-                stil te staan bij wat werkelijk belangrijk is,
-                een duidelijke richting te kiezen
-                en vervolgens met intentie in beweging te komen.
+                Vanuit inzicht ontstaat bewustwording.
+                Vanuit bewustwording ontstaan keuzes.
+                Vanuit keuzes ontstaat beweging.
             </p>
 
-            <p>
-                Deze benadering helpt mensen om niet alleen effectiever te worden,
-                maar vooral bewuster te worden van de persoon die zij willen zijn.
-            </p>
+            <div class="pillars">
 
-        </div>
+                <div class="pillar">
+                    <h3>Bewustwording</h3>
+                    Inzicht krijgen in de huidige situatie.
+                </div>
 
-        <div class="principles">
+                <div class="pillar">
+                    <h3>Oriëntatie</h3>
+                    Mogelijkheden en perspectieven verkennen.
+                </div>
 
-            <div class="principle">
-                <h3>Bewustzijn</h3>
-                <p>
-                    Leren zien wat er werkelijk speelt,
-                    zonder direct te reageren op elke prikkel.
-                </p>
-            </div>
+                <div class="pillar">
+                    <h3>Focus</h3>
+                    Prioriteiten bepalen en richting kiezen.
+                </div>
 
-            <div class="principle">
-                <h3>Oriëntatie</h3>
-                <p>
-                    Begrijpen wat belangrijk is
-                    en betekenis geven aan complexe situaties.
-                </p>
-            </div>
+                <div class="pillar">
+                    <h3>Actie</h3>
+                    In beweging komen en resultaat realiseren.
+                </div>
 
-            <div class="principle">
-                <h3>Richting</h3>
-                <p>
-                    Keuzes maken die aansluiten
-                    bij waarden, intenties en ambities.
-                </p>
-            </div>
-
-            <div class="principle">
-                <h3>Actie</h3>
-                <p>
-                    In beweging komen en consequent handelen
-                    vanuit de identiteit die je wilt ontwikkelen.
-                </p>
             </div>
 
         </div>
 
-        <div class="section" style="margin-top:50px;">
+    </section>
 
-            <h2>De kern</h2>
-
-            <p>
-                Het gaat niet om harder werken.
-            </p>
-
-            <p>
-                Het gaat niet om meer doen.
-            </p>
-
-            <p>
-                Het gaat niet om de nieuwste tools.
-            </p>
-
-            <p>
-                Het gaat om bewust kiezen wie je wilt zijn,
-                zodat je keuzes, gedrag en resultaten
-                steeds beter met elkaar in lijn komen.
-            </p>
-
-        </div>
-
+    <div class="footer">
+        © 2026 De Roon Methodieken
     </div>
-
-</div>
-
-<footer class="footer">
-    © 2026 Wilco de Roon
-</footer>
 
 </body>
 </html>
