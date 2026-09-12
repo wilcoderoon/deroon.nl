@@ -4,15 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>De Roon Methodieken</title>
+<title>BORA Methodiek | De Roon Methodieken</title>
 
 <style>
+
 :root{
-    --bg:#f5f3ee;
-    --primary:#1c2a44;
-    --accent:#b77732;
-    --text:#464646;
+    --dark:#1b2943;
+    --gold:#c18a2d;
+    --light:#f5f3ee;
     --white:#ffffff;
+    --text:#4a4a4a;
 }
 
 *{
@@ -23,42 +24,50 @@
 
 body{
     font-family:"Segoe UI",sans-serif;
-    background:var(--bg);
+    background:var(--light);
     color:var(--text);
     line-height:1.7;
 }
 
 .hero{
     text-align:center;
-    padding:60px 25px;
+    padding:40px 20px 30px;
+}
+
+.bora-logo{
+    width:500px;
+    max-width:95%;
+    display:block;
+    margin:0 auto 30px auto;
 }
 
 .profile{
-    width:240px;
-    height:240px;
+    width:170px;
+    height:170px;
     object-fit:cover;
     border-radius:50%;
-    border:6px solid var(--accent);
-    box-shadow:0 12px 25px rgba(0,0,0,0.15);
+    border:5px solid var(--gold);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    margin-bottom:25px;
 }
 
-.logo{
-    margin-top:30px;
-    color:var(--accent);
-    letter-spacing:6px;
+.company{
+    color:var(--gold);
+    font-size:18px;
+    letter-spacing:4px;
     text-transform:uppercase;
-    font-size:16px;
     font-weight:600;
+    margin-bottom:10px;
 }
 
 h1{
-    color:var(--primary);
-    font-size:62px;
-    margin:20px 0;
+    color:var(--dark);
+    font-size:60px;
+    margin-bottom:15px;
 }
 
 .subtitle{
-    color:var(--accent);
+    color:var(--gold);
     font-size:24px;
     font-weight:600;
     margin-bottom:30px;
@@ -67,13 +76,13 @@ h1{
 .intro{
     max-width:900px;
     margin:0 auto;
-    font-size:28px;
+    font-size:26px;
 }
 
 .content{
-    max-width:1100px;
-    margin:70px auto;
-    padding:0 25px;
+    max-width:1200px;
+    margin:60px auto;
+    padding:0 20px;
 }
 
 .card{
@@ -85,65 +94,82 @@ h1{
 
 .card h2{
     text-align:center;
-    color:var(--primary);
-    font-size:44px;
+    color:var(--dark);
+    font-size:42px;
     margin-bottom:30px;
 }
 
 .card p{
-    font-size:22px;
-    margin-bottom:22px;
+    font-size:21px;
+    margin-bottom:25px;
 }
 
 .pillars{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
+    gap:25px;
     margin-top:40px;
 }
 
 .pillar{
     background:#fafafa;
-    border-top:4px solid var(--accent);
-    border-radius:15px;
-    padding:25px;
+    border-top:5px solid var(--gold);
+    border-radius:18px;
+    padding:30px;
     text-align:center;
 }
 
 .pillar h3{
-    color:var(--primary);
-    margin-bottom:12px;
+    font-size:36px;
+    color:var(--dark);
+    margin-bottom:10px;
+}
+
+.pillar strong{
+    display:block;
+    color:var(--dark);
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.quote{
+    text-align:center;
+    margin-top:50px;
+    font-size:30px;
+    color:var(--dark);
+    font-style:italic;
 }
 
 .footer{
     text-align:center;
+    color:#777;
     padding:50px 20px;
-    color:#888;
 }
 
 @media(max-width:768px){
 
-    h1{
-        font-size:42px;
+    .profile{
+        width:130px;
+        height:130px;
     }
 
-    .intro{
-        font-size:20px;
+    h1{
+        font-size:42px;
     }
 
     .subtitle{
         font-size:18px;
     }
 
-    .profile{
-        width:180px;
-        height:180px;
+    .intro{
+        font-size:20px;
     }
 
     .card{
-        padding:30px;
+        padding:25px;
     }
 }
+
 </style>
 </head>
 
@@ -151,9 +177,11 @@ h1{
 
 <section class="hero">
 
-    <img src="wilcoderoon.png" alt="De Roon Methodieken" class="profile">
+    bora-logo.png
 
-    <div class="logo">
+    <img src="wilcoderoon.png" alt="Wilco de Roon" class="profile">
+
+    <div class="company">
         DE ROON METHODIEKEN
     </div>
 
@@ -164,8 +192,8 @@ h1{
     </div>
 
     <p class="intro">
-        Een praktische methode om bewust richting te geven aan
-        verandering, ontwikkeling en duurzame vooruitgang.
+        Een praktische methode die mensen, teams en organisaties helpt
+        om inzicht om te zetten in richting en richting om te zetten in actie.
     </p>
 
 </section>
@@ -177,48 +205,48 @@ h1{
         <h2>De BORA-cyclus</h2>
 
         <p>
-            De BORA Methodiek helpt mensen, teams en organisaties
-            om complexe vraagstukken terug te brengen naar een
-            overzichtelijke en herhaalbare aanpak.
+            De BORA Methodiek helpt mensen, teams en organisaties om complexe
+            vraagstukken terug te brengen naar een overzichtelijke en
+            herhaalbare aanpak.
         </p>
 
         <p>
-            Door bewustwording ontstaat inzicht. Vanuit inzicht
-            ontstaat oriëntatie. Vanuit oriëntatie wordt richting
-            gekozen. Vanuit richting volgt actie. De resultaten
-            daarvan leiden opnieuw tot bewustwording, waardoor een
-            continue ontwikkelcyclus ontstaat.
+            Door bewustwording ontstaat inzicht. Vanuit inzicht ontstaat
+            oriëntatie. Vanuit oriëntatie wordt richting gekozen. Vanuit
+            richting volgt actie. De resultaten daarvan leiden opnieuw tot
+            bewustwording, waardoor een continue ontwikkelcyclus ontstaat.
         </p>
 
         <div class="pillars">
 
             <div class="pillar">
                 <h3>B</h3>
-                <strong>Bewustwording</strong><br><br>
-                Begrijpen waar je staat, wat speelt en welke factoren
-                invloed hebben.
+                <strong>Bewustwording</strong>
+                Begrijpen waar je staat, wat speelt en welke factoren invloed hebben.
             </div>
 
             <div class="pillar">
                 <h3>O</h3>
-                <strong>Oriëntatie</strong><br><br>
-                Mogelijkheden, perspectieven en alternatieven
-                onderzoeken.
+                <strong>Oriëntatie</strong>
+                Mogelijkheden, perspectieven en alternatieven onderzoeken.
             </div>
 
             <div class="pillar">
                 <h3>R</h3>
-                <strong>Richting</strong><br><br>
+                <strong>Richting</strong>
                 Bewuste keuzes maken en bepalen welke koers wordt gevolgd.
             </div>
 
             <div class="pillar">
                 <h3>A</h3>
-                <strong>Actie</strong><br><br>
-                De gekozen richting omzetten naar concrete stappen
-                en resultaten.
+                <strong>Actie</strong>
+                De gekozen richting omzetten naar concrete stappen en resultaten.
             </div>
 
+        </div>
+
+        <div class="quote">
+            "Van bewustwording naar duurzame actie"
         </div>
 
     </div>
@@ -226,7 +254,7 @@ h1{
 </section>
 
 <div class="footer">
-    © 2026 De Roon Methodieken
+    © 2026 De Roon Methodieken • BORA Methodiek
 </div>
 
 </body>
