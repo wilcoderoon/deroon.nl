@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wilco de Roon | NOVA</title>
+
+<title>Wilco de Roon</title>
 
 <style>
 *{
@@ -13,96 +14,118 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background:#0f172a;
-    color:#f8fafc;
-    line-height:1.6;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background:#f8f9fb;
+    color:#222;
+    line-height:1.8;
 }
 
 .hero{
-    min-height:100vh;
-    display:flex;
-    flex-wrap:wrap;
-    align-items:center;
-    justify-content:center;
-    gap:60px;
-    padding:60px 10%;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+    text-align:center;
+    padding:80px 20px 120px;
 }
 
-.hero-image img{
-    width:350px;
-    max-width:90vw;
-    border-radius:20px;
-    box-shadow:0 20px 50px rgba(0,0,0,.4);
+.hero img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid rgba(255,255,255,0.15);
+    box-shadow:0 15px 40px rgba(0,0,0,0.35);
+    margin-bottom:30px;
 }
 
-.hero-content{
-    max-width:650px;
+.hero h1{
+    font-size:3rem;
+    font-weight:600;
+    margin-bottom:12px;
 }
 
-.tag{
-    color:#38bdf8;
-    font-weight:bold;
-    letter-spacing:2px;
-    margin-bottom:15px;
+.hero p{
+    max-width:700px;
+    margin:auto;
+    font-size:1.2rem;
+    color:#dbe4f0;
 }
 
-h1{
-    font-size:3.5rem;
-    margin-bottom:10px;
-}
-
-.subtitle{
-    font-size:1.3rem;
-    color:#cbd5e1;
-    margin-bottom:25px;
-}
-
-.intro{
-    font-size:1.1rem;
-    color:#e2e8f0;
-    margin-bottom:40px;
-}
-
-.nova{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-    gap:20px;
+.content{
+    max-width:1000px;
+    margin:-60px auto 80px;
+    padding:0 20px;
 }
 
 .card{
-    background:#1e293b;
+    background:white;
+    padding:50px;
+    border-radius:20px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.08);
+}
+
+.quote{
+    font-size:1.6rem;
+    color:#0f172a;
+    text-align:center;
+    margin-bottom:50px;
+    font-weight:300;
+}
+
+.section{
+    margin-bottom:40px;
+}
+
+.section h2{
+    color:#0f172a;
+    margin-bottom:15px;
+    font-size:1.8rem;
+}
+
+.section p{
+    color:#444;
+    margin-bottom:15px;
+}
+
+.principles{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.principle{
+    background:#f4f7fb;
     padding:25px;
     border-radius:15px;
-    transition:.3s;
 }
 
-.card:hover{
-    transform:translateY(-5px);
-    background:#334155;
-}
-
-.card h3{
-    color:#38bdf8;
+.principle h3{
     margin-bottom:10px;
+    color:#0f172a;
 }
 
 .footer{
     text-align:center;
     padding:40px;
-    border-top:1px solid rgba(255,255,255,.1);
-    color:#94a3b8;
+    color:#777;
+    border-top:1px solid #e5e7eb;
+    background:white;
 }
 
 @media(max-width:768px){
-    h1{
-        font-size:2.5rem;
-    }
 
-    .hero{
-        padding-top:40px;
-        text-align:center;
-    }
+.hero h1{
+    font-size:2.2rem;
+}
+
+.hero img{
+    width:180px;
+    height:180px;
+}
+
+.card{
+    padding:30px;
+}
 }
 </style>
 </head>
@@ -111,69 +134,134 @@ h1{
 
 <section class="hero">
 
-    <div class="hero-image">
-        wilcoderoon.png
-    </div>
+    wilcoderoon.png
 
-    <div class="hero-content">
+    <h1>Wilco de Roon</h1>
 
-        <div class="tag">NOVA FRAMEWORK</div>
+    <p>
+        Bewust navigeren in een wereld die steeds sneller,
+        complexer en onvoorspelbaarder wordt.
+    </p>
 
-        <h1>Wilco de Roon</h1>
+</section>
 
-        <p class="subtitle">
-            Technology Leader • Infrastructure • Transformation
-        </p>
+<div class="content">
 
-        <p class="intro">
-            Ik geloof dat effectieve leiderschap en besluitvorming beginnen
-            met bewust waarnemen, begrijpen en vervolgens doelgericht handelen.
-            Daarom werk ik vanuit het NOVA-principe:
-            <strong>Notice, Orient, Vector, Act.</strong>
-        </p>
+    <div class="card">
 
-        <div class="nova">
+        <div class="quote">
+            "Niet alles vraagt om meer kennis.
+            Soms vraagt het om meer bewustzijn."
+        </div>
 
-            <div class="card">
-                <h3>Notice</h3>
+        <div class="section">
+
+            <h2>Waarom</h2>
+
+            <p>
+                De wereld verandert in een tempo dat we nog niet eerder
+                hebben meegemaakt. We worden dagelijks geconfronteerd met
+                meer informatie, meer keuzes, meer verwachtingen en meer
+                afleiding dan ooit tevoren.
+            </p>
+
+            <p>
+                Daardoor raken veel mensen en organisaties het overzicht kwijt.
+                Niet omdat er te weinig kennis beschikbaar is, maar omdat het
+                moeilijker wordt om richting te vinden tussen alle mogelijkheden.
+            </p>
+
+        </div>
+
+        <div class="section">
+
+            <h2>Een kompas voor bewust leven en werken</h2>
+
+            <p>
+                Duurzame ontwikkeling begint niet bij systemen, processen of
+                technologie. Zij begint bij mensen.
+            </p>
+
+            <p>
+                Bij het vermogen om bewust waar te nemen wat er gebeurt,
+                stil te staan bij wat werkelijk belangrijk is,
+                een duidelijke richting te kiezen
+                en vervolgens met intentie in beweging te komen.
+            </p>
+
+            <p>
+                Deze benadering helpt mensen om niet alleen effectiever te worden,
+                maar vooral bewuster te worden van de persoon die zij willen zijn.
+            </p>
+
+        </div>
+
+        <div class="principles">
+
+            <div class="principle">
+                <h3>Bewustzijn</h3>
                 <p>
-                    Observeer de situatie objectief.
-                    Zie signalen, kansen en risico's voordat anderen ze zien.
+                    Leren zien wat er werkelijk speelt,
+                    zonder direct te reageren op elke prikkel.
                 </p>
             </div>
 
-            <div class="card">
-                <h3>Orient</h3>
+            <div class="principle">
+                <h3>Oriëntatie</h3>
                 <p>
-                    Begrijp de context.
-                    Analyseer informatie en bepaal wat werkelijk relevant is.
+                    Begrijpen wat belangrijk is
+                    en betekenis geven aan complexe situaties.
                 </p>
             </div>
 
-            <div class="card">
-                <h3>Vector</h3>
+            <div class="principle">
+                <h3>Richting</h3>
                 <p>
-                    Kies richting.
-                    Definieer de optimale koers en maak keuzes met intentie.
+                    Keuzes maken die aansluiten
+                    bij waarden, intenties en ambities.
                 </p>
             </div>
 
-            <div class="card">
-                <h3>Act</h3>
+            <div class="principle">
+                <h3>Actie</h3>
                 <p>
-                    Handel doelgericht.
-                    Zet inzicht om in tastbare resultaten en impact.
+                    In beweging komen en consequent handelen
+                    vanuit de identiteit die je wilt ontwikkelen.
                 </p>
             </div>
 
         </div>
 
+        <div class="section" style="margin-top:50px;">
+
+            <h2>De kern</h2>
+
+            <p>
+                Het gaat niet om harder werken.
+            </p>
+
+            <p>
+                Het gaat niet om meer doen.
+            </p>
+
+            <p>
+                Het gaat niet om de nieuwste tools.
+            </p>
+
+            <p>
+                Het gaat om bewust kiezen wie je wilt zijn,
+                zodat je keuzes, gedrag en resultaten
+                steeds beter met elkaar in lijn komen.
+            </p>
+
+        </div>
+
     </div>
 
-</section>
+</div>
 
 <footer class="footer">
-    © 2026 Wilco de Roon | NOVA: Notice • Orient • Vector • Act
+    © 2026 Wilco de Roon
 </footer>
 
 </body>
